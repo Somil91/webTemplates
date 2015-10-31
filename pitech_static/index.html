@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title> Tech</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage full-screen navigation and sections control menu." />
+    <meta name="keywords" content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
+    <meta name="Resource-type" content="Document" />
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="./css/custom.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./libs/jquery.fullPage.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Croissant+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            anchors: ['home', 'aboutus', 'contactus'],
+            sectionsColor: ['#FFF', 'grey', '#fff'],
+            menu: '#menu',
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['Home', 'About Us', 'Contact US'],
+            afterRender: function() {
+                //playing the video
+                $('video').get(0).play();
+            }
+        });
+    });
+    </script>
+</head>
+
+<body data-spy="scroll" data-target="#myNavbar" data-offset="20">
+    <ul id="menu">
+        <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
+        <li data-menuanchor="aboutus"><a href="#aboutus">About Us</a></li>
+        <li data-menuanchor="contactus"><a href="#contactus">Contact Us</a></li>
+    </ul>
+    <div id="fullpage">
+        <div class="section" id="section1">
+            <video autoplay loop muted id="myVideo">
+                <source src="./vids/temp.mp4" type="video/mp4">
+                <source src="./vids/flowers.webm" type="video/webm">
+            </video>
+            <div class="layer">
+                <h1 class="header">GreenPi Tech</h1>
+                <h5 class="divider"></h5>
+                <h1 class="header-sub-text">in harmony with technology</h1>
+                <p>
+                    <i class="fa fa-2x fa-border fa-facebook-official social-icons"></i>
+                    <i class="fa fa-2x fa-border fa-google-plus social-icons"></i>
+                    <i class="fa fa-2x fa-border fa-linkedin social-icons"></i>
+                    <i class="fa fa-2x fa-border fa-twitter social-icons"></i></p>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="slide" id="slide1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12  col-sm-12  col-sm-12 desctext" >
+                            <div class="clearfix"></div>
+                            <h1 class="section-heading">What we do</h1>
+                            <hr class="section-heading-spacer">
+                            <p class="lead">At GreenPi Tech , we work on ideas that hold the power to redefine the things around us.</p>
+                            <p class="lead"> We work across industry domains to get the revolutionary idea to get onboarded.</p>
+                        </div>
+                      <!--   <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                            <img class="img-responsive aboutimg" src="css/images/Death_to_stock_communicate_hands_9.jpg" alt="">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12 desctext">
+                            <div class="clearfix"></div>
+                            <h1 class="section-heading">Why Us</h1>
+                            <hr class="section-heading-spacer">
+                            <p class="lead">Because we hold experience in research and development of an idea.</p>
+                            <p class="lead"> Beacause we create in-house products that have helped us understand as to what it takes to get it done.</p>
+                        </div>
+                      <!--   <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                            <img class="img-responsive aboutimg" src="css/images/Death_to_stock_communicate_hands_5.jpg" alt="">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="clearfix"></div>
+                            <h1 class="section-heading desctext">Coming Soon</h1>
+                            <hr class="section-heading-spacer">
+                        </div>
+                        <div class="col-md-4 col-md-offset-2">
+                            <div class="thumbnail">
+                                <img src="css/images/Death_to_stock_communicate_hands_5.jpg" alt="Recruitment Marketplace">
+                                <div class="caption">
+                                    <h3>Find-n-Hire</h3>
+                                    <p>A hack for recruitment worklfows.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <img src="css/images/Death_to_stock_communicate_hands_9.jpg" alt="Fresh gifting">
+                                <div class="caption">
+                                    <h3>Fresh Gifts</h3>
+                                    <p>A traditional way of gifting</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div class="container">
+                <h1 class="title text-center desctext" id="contact">Contact Us</h1>
+                <div class="space"></div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="footer-content address">
+                            <p class="large">GreenPi Staffing is a subsidiary of GreenPi Technology, LLC</p>
+                            <p><i class="fa fa-map-marker pr-10"></i> 3235 Armour CT, Mason, OH 45040</p>
+                            <p><i class="fa fa-phone pr-10"></i> +1 513-445-4717 , +1 513-492-2716</p>
+                            <p><i class="fa fa-envelope-o pr-10"></i> info@greenpistaffing.com</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJVf3YzAlZQIgR8gXtohk_igk&key=AIzaSyDDgfsodjRpSS8fKqf5sDnrX3NV-n9_2Zw" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

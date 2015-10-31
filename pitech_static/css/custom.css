@@ -1,0 +1,156 @@
+/* Centered texts in each section
+    * --------------------------------------- */
+
+.section {
+    text-align: center;
+    overflow: hidden;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black;
+    /* in case the video doesn't fit the whole page*/
+    background-image: /* our video */
+    ;
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover;
+    /*cover video background */
+    z-index: 3;
+    opacity: 0.8;
+}
+
+
+/* Layer with position absolute in order to have it over the video
+    * --------------------------------------- */
+
+#section1 .layer {
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    left: 0;
+    top: 43%;
+}
+
+
+/*solves problem with overflowing video in Mac with Chrome */
+
+#section1 {
+    overflow: hidden;
+}
+
+.header-sub-text {
+    font-family: 'Croissant One', cursive;
+    color: white;
+        text-shadow: 1px 2px 2px black;
+}
+
+.header {
+    font-family: 'Roboto Mono';
+    color: white;
+    font-size: 5em;
+        text-shadow: 1px 2px 2px black;
+}
+
+#menu li {
+    display: inline-block;
+    margin: 10px;
+    color: #000;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 10px;
+    border-radius: 20px;
+    border : 2px solid;
+        
+}
+
+#menu li.active {
+    background: #666;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#menu li.active a:hover {
+    color: #000;
+}
+
+#menu li:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#menu li a,
+#menu li.active a {
+    padding: 9px 18px;
+    display: block;
+}
+
+#menu li.active a {
+    color: #fff;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons {
+    color: white;
+    margin: 4px;
+}
+
+
+/*Adding background for the slides
+    * --------------------------------------- */
+
+#slide1 {
+    background-image: url(./images/DeathtoStock_Wired6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#slide2 {
+    background-image: url(./images/DeathtoStock_Wired3.jpg);
+    background-size: cover;
+}
+
+#slide3 {
+    background-image: url(./images/DeathtoStock_Wired4.jpg);
+    background-size: cover;
+}
+
+#section3 {
+    background-image: url(./images/DeathtoStock_NotStock7.jpg);
+    background-size: cover;
+}
+
+.aboutimg {
+    border-radius: 20px;
+    border: 2px solid;
+}
+
+.desctext {
+    color: white;
+}
+
+.address {
+    color: white;
+    font-weight: bolder;
+}
