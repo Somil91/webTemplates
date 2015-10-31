@@ -1,0 +1,483 @@
+/**
+ * Actual CSS
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+.head_section {
+    display: table;
+    height: 100%;
+    width: 100%;
+    padding: 100px 0;
+    color: #fff;
+    background: url(../images/MyKingdom_PSD1.jpg) no-repeat center center fixed;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    border-bottom: 5px solid #E8432E;
+}
+
+.open > .dropdown-menu {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);  
+  opacity:1;
+  background: transparent;
+}
+  
+.dropdown-menu {
+  opacity:.3;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-animation-fill-mode: forwards;  
+  animation-fill-mode: forwards; 
+  -webkit-transform: scale(1, 0);
+  display: block; 
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+}
+
+.dropdown-menu>li>a {
+    color: white !important;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.dropdown-menu>li>a:hover {
+    background: none !important;
+    border-bottom: 5px solid #E8432E;
+}
+
+.brand-heading {
+    color: #FFF;
+    font-size: 2em;
+    font-family: 'pt_sansbold';
+    text-shadow: 0px 1px 5px #635E5E;
+    -webkit-text-shadow: 0px 1px 5px #635E5E;
+    -moz-text-shadow: 0px 1px 5px #635E5E;
+    -o-text-shadow: 0px 1px 5px #635E5E;
+}
+
+.intro-text {
+    font-size: 3.5em;
+    color: #FFF;
+    width: 35%;
+    line-height: 1.2em;
+    margin: 2.5em 0 1em;
+    text-shadow: 0px 0px 5px #474747;
+    -webkit-text-shadow: 0px 0px 5px #474747;
+    -moz-text-shadow: 0px 0px 5px #474747;
+    -o-text-shadow: 0px 0px 5px #474747;
+}
+
+.page-scroll {
+        color: white;
+}
+
+.highlight-small {
+    height: 3px;
+    width: 2.5%;
+    background: #E8432E;
+    display: block;
+}
+
+.welcome-section {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.start-para {
+    font-size: 1.2em;
+    color: #999;
+    width: 86%;
+    margin: 2.4em 0 2em;
+    line-height: 1.5em;
+    font-family: sans-serif;
+}
+
+.sub-heading {
+    color: #000;
+    font-size: 1.3em;
+}
+
+.sub-heading span {
+  padding-right: 1em;
+}
+
+
+.link-arrow {
+    color:red;
+    padding-right: 1em;
+
+}
+
+/*Video Section*/
+
+.video-bg {
+    padding-top: 4em;
+    display: table;
+    height: 100%;
+    width: 100%;
+    padding-top: 4em;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../images/MyKingdom_PSD-133.jpg) no-repeat center center fixed;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding-bottom: 4em;
+}
+
+.video-text {
+    color: #FFF;
+    font-size: 1.5em;
+    margin: 0 auto;
+    font-family: sans-serif;
+    line-height: 1.5em;
+    font-weight: 100;
+}
+
+
+/*From  latest Blog */
+
+.latest-blog{
+    padding-top: 4em;
+}
+
+.content-left {
+    width: 24%;
+    float: left;
+    padding: 0 2% 0 0;
+}
+
+.content-left h4 {
+    color: #000;
+    font-size: 1.5em;
+    margin: 0.5em 0 0.7em 0;
+}
+
+.content-left p {
+    color: #B9B9B9;
+    font-size: 0.9em;
+    width: 95%;
+    line-height: 1.5em;
+    margin: 2em 0 3em;
+}
+
+.content-left a span {
+    width: 16px;
+    height: 14px;
+    background: url(../images/image-sprite.png) no-repeat -90px -60px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+.content-left a {
+    color: #000;
+    font-size: 1em;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+.content-left a:hover {
+    color: #E8432E;
+}
+
+.content-center {
+    width: 50%;
+    float: left;
+}
+
+.content-right {
+    float: right;
+    width: 18%;
+    padding: 0 2%;
+}
+
+.blog-content-info-left {
+    float: left;
+    width: 15%;
+}
+
+.blog-content-info-left span {
+    display: block;
+    color: #7F7F7F;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1em;
+    border-bottom: 1px solid #eee;
+    padding: 1em 0;
+}
+
+.blog-content-info-left span label {
+    display: block;
+    font-size: 2.2em;
+    line-height: 0.8em;
+    margin-top: 0.1em;
+    color: rgba(127, 127, 127, 0.64);
+}
+
+.blog-content-info-right {
+    float: right;
+    width: 82%;
+    border-left: 2px solid #F1F1F1;
+    padding-left: 2%;
+}
+
+.more-info {
+    color: #000;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    display: block;
+    margin-top: 2em;
+}
+
+.more-info:hover {
+    color: #E8432E;
+}
+
+/*.more-info span {
+    width: 16px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}*/
+
+.blog-content-info-left a {
+    color: #A8A4A4;
+    text-align: center;
+    display: block;
+    padding: 1em 0;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+.blog-content-info-left a small {
+    width: 18px;
+    height: 16px;
+    display: block;
+    margin: 0 auto 0.5em;
+}
+
+.blog-content-info-left a:hover {
+    color: #000;
+}
+
+/*.blog-content-info-left a:hover small {
+    background: url(../images/image-sprite.png) no-repeat -55px -5px;
+}*/
+
+.blog-content-info-right h4 a {
+    color: #000;
+    font-size: 1.5em;
+    margin: 0.5em 0 0.2em 0;
+    display: block;
+}
+
+.stats {
+    margin-bottom: 0.5em;
+}
+
+.blog-content-info-right ul {
+    list-style: none;
+}
+
+.blog-content-info-right li {
+    float: left;
+}
+
+.blog-content-info-right li a {
+    color: #B9B9B9;
+    font-size: 0.9em;
+    padding: 0 0.3em;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+.blog-content-info-right li a:hover {
+    color: #000;
+}
+
+.blog-content-info-right li span {
+    color: #B9B9B9;
+    margin-right: 0.3em;
+}
+
+.content-text {
+    color: #A7A7A7;
+    font-size: 0.9em;
+    line-height: 1.5em;
+        float: left;
+}
+
+.post-pic {
+    border-bottom: 3px solid #E8432E;
+}
+
+.content-right {
+       
+    background: #E8432E;
+    padding: 2%;
+    margin: 0 0 0 2%;
+}
+
+.quot {
+    color: #FFF;
+    font-size: 1.25em;
+}
+
+.content-right ul li {}
+
+.content-right ul li:first-child {
+    float: left;
+}
+
+.content-right ul li:first-child a {
+    color: #FFF;
+    display: block;
+    padding: 0.5em 0 0 0;
+    font-size: 0.9em;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+.content-right ul li:first-child a:hover {
+    color: #000;
+}
+
+.content-right ul {
+    margin-top: 1.5em;
+}
+
+.content-right ul li:nth-child(2) {
+    float: right;
+}
+
+.content-right ul li:nth-child(2) span {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+
+/**
+ * Form blog end 
+ */
+
+.carousel-content {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.text-content{
+    color:white;
+    padding-top: 6em;
+    padding-bottom: 4em;
+   /* height:15em;*/
+}
+
+
+.text-content p {
+    padding: 1.5em 1em;
+    font-size: 1.2em;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.6em;
+    font-family: sans-serif;
+}
+
+.text-content h3{
+    text-align: center;
+   font-size: smaller;
+}
+
+.bg-image {
+   
+    background: url(../images/MyKingdom_PSD-bg.jpg) no-repeat 0px 0px;
+}
+
+
+/*Get in touch section*/
+
+.get-in-touch {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.address h4 {
+    color: #000;
+    font-size: 1.2em;
+}
+
+.address p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #B9B9B9;
+    font-size: 0.9em;
+    line-height: 1.6em;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+.form-header {
+    font-size: 1.5em;
+    color: #000;
+}
+
+.text-input {
+    border: 1px solid #CCCCCC !important;
+    border-radius: 2px !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+    border-top: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -o-box-shadow: none !important;
+}
+
+.social-list {
+    list-style: none
+}
+
+
+/*Map*/
+
+.map {
+    padding: 1.5em 0 0;
+    border-bottom: 3px solid #E8432E;
+}
+
+.map-container{
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+
